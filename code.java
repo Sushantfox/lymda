@@ -14,7 +14,11 @@ class Main {
     System.out.print("Reversed ArrayList: ");
     languages.forEach((e) -> {
 
-   
+      // body of lambda expression
+      String result = "";
+      for (int i = e.length()-1; i >= 0 ; i--)
+      result += e.charAt(i);
+      System.out.print(result + ", ");
     });
 
   }
